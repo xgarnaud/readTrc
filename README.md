@@ -3,11 +3,11 @@ Little Python helper class to read .trc binary files from LeCroy Oscilloscopes.
 Tested on Python3.
 
 # Installation
-Just copy the `readTrc.py` file in your python path.
+`python setup.py install` or `python setup.py install --user`
 
 # Usage
 ```python
-from readTrc import Trc
+from read_trc import Trc
 trc = Trc()
 fName = "./C1_00000.trc"
 datX, datY, d = trc.open(fName)
